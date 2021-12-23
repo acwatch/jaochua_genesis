@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jaochua_genesis/static/css/main.95d9a15f.css",
+    "main.js": "/jaochua_genesis/static/js/main.b35491e3.js",
+    "static/js/787.5bebc372.chunk.js": "/jaochua_genesis/static/js/787.5bebc372.chunk.js",
+    "index.html": "/jaochua_genesis/index.html",
+    "main.95d9a15f.css.map": "/jaochua_genesis/static/css/main.95d9a15f.css.map",
+    "main.b35491e3.js.map": "/jaochua_genesis/static/js/main.b35491e3.js.map",
+    "787.5bebc372.chunk.js.map": "/jaochua_genesis/static/js/787.5bebc372.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95d9a15f.css",
+    "static/js/main.b35491e3.js"
+  ]
+}
