@@ -1,0 +1,8 @@
+.Banner-container {
+  height: 100vh;
+  background-color: #fde2e4;
+}
+
+.Banner-container h1 {
+  color: rgb(96, 96, 180);
+}
