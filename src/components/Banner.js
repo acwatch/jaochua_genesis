@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react'
 import { useGLTF, ScrollControls, Scroll } from '@react-three/drei'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Canvas, useFrame } from '@react-three/fiber'
 
 import './Banner.css'
 
