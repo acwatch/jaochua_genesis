@@ -1,51 +1,35 @@
-import React, { Suspense } from 'react'
-import { useGLTF, ScrollControls, Scroll } from '@react-three/drei'
+import React, { Suspense, useRef } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
+import { useGLTF, ScrollControls, Scroll, useScroll } from '@react-three/drei'
+import * as THREE from 'three'
 
 import './Banner.css'
 
-function Model() {
+function Model({...props}) {
   const { scene } = useGLTF('./shiba/scene.gltf')
-  const myMesh = React.useRef()
+  const ref = useRef()
 
-  // Basic Animation - Rotation
-  useFrame(({ clock }) => {
-    const a = clock.getElapsedTime()
-    myMesh.current.rotation.y = a
+  const data = useScroll()
+  useFrame(() => {
+    ref.current.rotation.y = THREE.MathUtils.degToRad((-data.offset * 180) / 1)
   })
-
-  return <primitive object={scene} ref={myMesh} />
+  return <primitive object={scene} ref={ref} />
 }
 
 function Banner() {
-  // const { viewport } = useThree()
   return (
     <div className='Banner'>
       <div className='Banner-container'>
-        {/* <h1>JAO CHUA GENESIS</h1> */}
         <Canvas>
           <Suspense fallback={null}>
-            <ScrollControls
-              pages={3} // Each page takes 100% of the height of the canvas
-              distance={1} // A factor that increases scroll bar travel (default: 1)
-              damping={10} // Friction, higher is faster (default: 4)
-              horizontal={false} // Can also scroll horizontally (default: false)
-              infinite={false} // Can also scroll infinitely (default: false)
-            > 
+            <ScrollControls pages={3} >
               <Model />
-              {/* <Scroll> */}
-                {/* <Model /> */}
-                {/* <Model position={[0, 0, 0]} />
-                <Model position={[0, viewport.height, 0]} />
-                <Model position={[0, viewport.height * 1, 0]} /> */}
-              {/* </Scroll> */}
               <Scroll html>
-                <h1>html in here (optional)</h1>
-                <h1 style={{ top: '100vh' }}>second page</h1>
-                <h1 style={{ top: '200vh' }}>third page</h1>
-              </Scroll>
-            </ScrollControls>
-            
+                <h1 style={{ position: 'absolute', left: '75vw', fontSize: '5em'}}>Jao Chao Genesis</h1>
+                <h1 style={{ position: 'absolute', top: '100vh', fontSize: '5em'}}>Descriptions</h1>
+                <h1 style={{ position: 'absolute', left: '45vw', top: '200vh', fontSize: '5em'}}>CODE</h1>
+               </Scroll>
+            </ScrollControls>  
           </Suspense>
         </Canvas>
       </div>
