@@ -1,0 +1,29 @@
+.Material-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 10rem;
+}
+
+.Material-container h1 {
+  color: rgb(96, 96, 180);
+}
+
+.img-container img {
+  width: 90%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .Material-container {
+    height: 100vh;
+    display: block;
+    text-align: center;
+  }
+
+  .img-container img {
+    width: 50%;
+    height: auto;
+  }
+}

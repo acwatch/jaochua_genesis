@@ -1,8 +1,18 @@
 .Banner-container {
   height: 100vh;
+  width: 100%;
   background-color: #fde2e4;
 }
 
 .Banner-container h1 {
+  /* font-size: 4em; */
   color: rgb(96, 96, 180);
+  position: absolute;
+}
+
+@media screen and (max-width: 767px) {
+  .Banner-container h1 {
+    font-size: 2rem;
+    color: #00aa33
+  }
 }
