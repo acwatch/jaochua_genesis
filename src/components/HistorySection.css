@@ -1,0 +1,21 @@
+.HistorySection {
+  /* height: 100vh; */
+}
+
+.History-content {
+  display: flex;
+  border: 3px solid blue;
+  justify-content: space-between;
+}
+
+.History-content p {
+  margin-left: 10px;
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.History-content img {
+  position: relative;
+  height: 80vh;
+  width: auto;
+}

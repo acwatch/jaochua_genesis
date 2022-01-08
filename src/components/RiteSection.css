@@ -1,0 +1,17 @@
+.Rite-container {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.Rite-container p {
+  font-size: 1.5rem;
+  margin-left: 50px; 
+}
+
+iframe {
+  width: 40vw;
+  height: 45vh;
+  margin-right: 50px;
+}

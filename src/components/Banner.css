@@ -1,18 +1,38 @@
-.Banner-container {
-  height: 100vh;
-  width: 100%;
-  background-color: #fde2e4;
-}
-
-.Banner-container h1 {
-  /* font-size: 4em; */
-  color: rgb(96, 96, 180);
-  position: absolute;
-}
-
 @media screen and (max-width: 767px) {
-  .Banner-container h1 {
-    font-size: 2rem;
-    color: #00aa33
+  .project-name h1 {
+    font-size: 1.5rem;
+    color: #131313;
+    text-align: right;
+  }
+
+  .project-canvas {
+    border: 2px solid #73AD21;
+    height: 75vh;
+    width: 100vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  .btn {
+    text-align: center;
+  }
+
+  .btn a {
+    background-color: rgb(37, 130, 236);
+    border: 1px solid rgb(37, 130, 236);
+    /* border-radius: 10%; */
+    color: whitesmoke;
+    font-size: 1rem;
+    height: 1.5rem;
+    width: 5rem;
+    text-align: center;
+  }
+
+  .project-code {
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
 }
