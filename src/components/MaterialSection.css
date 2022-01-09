@@ -1,18 +1,20 @@
-h1 {
-  margin-left: 1rem;
+.Material-container {
+  padding: 2rem;
+  /* border: 1px solid red; */
 }
 
-.Material-container {
-  height: 60vh;
-  width: 100%;
+.Material-container h1 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+.Material-content {
   display: flex;
-  justify-content: space-around;
-  gap: 8rem;
-  
+  padding: 2rem;
+  /* border: 1px solid blue; */
 }
 
 .img-container {
-  /* border: 3px solid #73AD21; */
   text-align: center;
 }
 
@@ -28,14 +30,18 @@ h1 {
 }
 
 @media screen and (max-width: 767px) {
-  .Material-container {
-    height: 100vh;
-    display: block;
+  .Material-container h1 {
+    font-size: 2rem;
     text-align: center;
+    padding: 1rem;
+  }
+
+  .Material-content {
+    display: block;
+    padding: 0;
   }
 
   .img-container img {
-    width: 50%;
-    height: auto;
+    width: 70%;
   }
 }

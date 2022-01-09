@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <Banner />
       <MaterialSection />
-      {/* <RiteSection /> */}
-      {/* <HistorySection /> */}
+      <RiteSection />
+      <HistorySection />
       {/* <ExperienceSection /> */}
     </div>
   )

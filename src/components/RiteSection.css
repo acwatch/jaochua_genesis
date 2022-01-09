@@ -1,17 +1,42 @@
 .Rite-container {
-  height: 100vh;
+  padding: 2rem;
+  /* border: 1px solid red; */
+}
+
+.Rite-container h1 {
+  font-size: 3rem;
+}
+
+.Rite-content {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  padding: 2rem;
+  /* border: 1px solid blue; */
 }
 
 .Rite-container p {
   font-size: 1.5rem;
-  margin-left: 50px; 
 }
 
 iframe {
-  width: 40vw;
-  height: 45vh;
-  margin-right: 50px;
+  width: 50vw;
+  height: 50vh;
+}
+
+@media screen and (max-width: 767px) {
+  .Rite-container h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .Rite-content {
+    display: block;
+    padding: 0;
+    text-align: center;
+  }
+
+  iframe {
+    width: 80vw;
+    height: 40vh;
+  }
 }
